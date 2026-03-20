@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.fromLTRB(0, 200, 0, 0),
+                padding: const EdgeInsets.fromLTRB(0, 120, 0, 0),
                 child: Container(
                   height: 100,
                   width: double.infinity,
@@ -64,6 +64,63 @@ class MainApp extends StatelessWidget {
                       child: Text(
                         'Seamlessly',
                         style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                width: 300,
+                height: 220,
+                color: Colors.black,
+                child: Column(
+                  spacing: 20,
+                  children: [
+                    Container(
+                      width: 300,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        color: Colors.deepPurple,
+                      ),
+                      alignment: Alignment.center,
+                      child: Text(
+                        'Sign Up whit Email ID',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    Container(
+                      width: 300,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        color: Colors.white,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        spacing: 10,
+                        children: [
+                          Container(
+                            width: 20,
+                            height: 20,
+                            child: Image.asset('assets/google.png'),
+                          ),
+                          Text(
+                            'Sign Up with Google',
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Already have a account? Sign in',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ],
                       ),
                     ),
                   ],
